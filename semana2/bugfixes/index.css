@@ -5,6 +5,7 @@ table{
 
 h2{
     text-align: center;
+    background-color: orange;
 }
 
 #centralizar-lupa{
@@ -36,4 +37,16 @@ h2{
 
 *{
     font-family: roboto;
+}
+
+.container{
+    text-align: center;
+}
+
+#container-de-descricao{
+    background-color: blue;
+}
+
+#container-para-comprar{
+    background-color: yellow;
 }
