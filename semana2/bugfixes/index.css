@@ -33,3 +33,7 @@ h2{
     border-right-width: 0;
     border-left-width: 0;
 }
+
+*{
+    font-family: roboto;
+}
