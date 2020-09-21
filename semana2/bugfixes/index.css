@@ -2,3 +2,12 @@ table{
     width: 60%;
     margin:auto;
 }
+
+h2{
+    text-align: center;
+}
+
+#centralizar-lupa{
+    width: 18%;
+    margin: auto;
+}
