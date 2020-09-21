@@ -25,3 +25,11 @@ h2{
 .botao-branco:hover{
     background-color: gray;
 }
+
+#tirar-bordas{
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
