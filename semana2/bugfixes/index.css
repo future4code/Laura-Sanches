@@ -11,3 +11,17 @@ h2{
     width: 18%;
     margin: auto;
 }
+
+#centralizar-voltar{
+    width:8%;
+    margin:auto;
+}
+
+.botao-branco{
+    background-color: white;
+    color:black;
+}
+
+.botao-branco:hover{
+    background-color: gray;
+}
