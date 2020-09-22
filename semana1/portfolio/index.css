@@ -1,0 +1,32 @@
+body{
+    background-image: url(https://i.pinimg.com/564x/f3/87/34/f38734d0ae885336e68b6203d4983bbf.jpg);
+}
+
+#personalizar-home{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-left:60px;
+    align: left;
+}
+
+#personalizar-homee{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#personalizar-home-foto{
+    align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    #personalizar-bem-vindo{
+        background-color: cornflowerblue;
+        margin:0;
+        text-align:center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
