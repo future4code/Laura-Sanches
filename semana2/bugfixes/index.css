@@ -1,0 +1,52 @@
+table{
+    width: 60%;
+    margin:auto;
+}
+
+h2{
+    text-align: center;
+    background-color: orange;
+}
+
+#centralizar-lupa{
+    width: 18%;
+    margin: auto;
+}
+
+#centralizar-voltar{
+    width:8%;
+    margin:auto;
+}
+
+.botao-branco{
+    background-color: white;
+    color:black;
+}
+
+.botao-branco:hover{
+    background-color: gray;
+}
+
+#tirar-bordas{
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+*{
+    font-family: roboto;
+}
+
+.container{
+    text-align: center;
+}
+
+#container-de-descricao{
+    background-color: blue;
+}
+
+#container-para-comprar{
+    background-color: yellow;
+}
