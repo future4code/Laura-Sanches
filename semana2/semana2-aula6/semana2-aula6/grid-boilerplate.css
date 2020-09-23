@@ -1,0 +1,30 @@
+    div {
+        border: 2px solid #313B3E;
+        border-radius: 10px;
+    }
+    
+    .container {
+        width: 600px;
+        height: 600px;
+        background-color: #A8BBC6;
+    }
+    
+    #item1 {
+        background-color: #FF4136;
+        /*Vermelho*/
+    }
+    
+    #item2 {
+        background-color: #2ECC40;
+        /*Verde*/
+    }
+    
+    #item3 {
+        background-color: #0074D9;
+        /*Verde*/
+    }
+    
+    #item4 {
+        background-color: #FFDC00;
+        /*Amarelo*/
+    }
