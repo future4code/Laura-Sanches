@@ -1,0 +1,89 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
+}
+
+.green-background {
+    background-color: green;
+    width: 300px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.yellow-background {
+    background-color: yellow;
+    width: 1500px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-background {
+    background-color: fuchsia;
+    display: grid;
+    justify-content: center;
+    height: 470px;
+    align-items: center;
+
+}
+
+.blue-background {
+    background-color: blue;
+    display: grid;
+    justify-content: center;
+    height: 180px;
+    width: 600px;
+    align-items: center;
+}
+
+.red-background {
+    background-color: red;
+    display: grid;
+    width: 400px;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightgreen-background {
+    background-color: lightgreen;
+    display: grid;
+    width: 400px;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+.purple-background {
+    background-color: purple;
+    width: 1600px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#top-container{
+    display: grid;
+}
+
+#middle-container{
+    display: grid;
+}
+
+#main-container{
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(15, 1fr);
+    height: 20px;
+}

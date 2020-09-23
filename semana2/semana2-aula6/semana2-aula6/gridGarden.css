@@ -1,0 +1,57 @@
+/*na fase 1 eu resolvi com grid-column-start: 3;*/
+
+/*na fase 2 eu resolvi com grid-column-start: 5;*/
+
+/*na fase 3 eu resolvi com grid-column-end: 4;*/
+
+/*na fase 4 eu resolvi com grid-column-end: 2;*/
+
+/*na fase 5 eu resolvi com grid-column-end: 5*/
+
+/*na fase 6 eu resolvi com grid-column-start: 4;*/
+
+/*na fase 7 eu resolvi com grid-column-end: span 2;*/
+
+/*na fase 8 eu resolvi com grid-column-end:span 5;*/
+
+/*na fase 9 eu resolvi com grid-column-start: span 3;*/
+
+/*na fase 10 eu resolvi com grid-column: 4 / 6;*/
+
+/*na fase 11 eu resolvi com grid-column: 2 / 5;*/
+
+/*na fase 12 eu resolvi com grid-row-start: 3;*/
+
+/*na fase 13 eu resolvi com grid-row: 3/6*/
+
+/*na fase 14 eu resolvi com grid-column: 2;
+                            grid-row: 5;*/
+
+/*na fase 15 eu resolvi com grid-column: 2/6;
+                            grid-row: 1/6;*/
+
+/*na fase 16 eu resolvi com grid-area: 1/2/4/7;*/
+
+/*na fase 17 eu resolvi com grid-area: 2/3/5/6;*/
+
+/*na fase 18 eu resolvi com order: 01*/
+
+/*na fase 19 eu resolvi com order: -1*/
+
+/*na fase 20 eu resolvi com grid-template-columns: 50%*/
+
+/*na fase 21 eu resolvi com grid-template-columns: repeat(8, 12.5%)*/
+
+/*na fase 22 eu resolvi com grid-template-columns: 100px 3em 40%*/
+
+/*na fase 23 eu resolvi com grid-template-columns: 1fr 5fr;*/
+
+/*na fase 24 eu resolvi com grid-template-columns: 50px 1fr 1fr 1fr 50px*/
+
+/*na fase 25 eu resolvi com grid-template-columns: 75px 3fr 2fr;*/
+
+/*na fase 26 eu resolvi com grid-template-rows: 50px 0fr 0fr 0fr */
+
+/*na fase 27 eu resolvi com grid-template: 60% / 200px;*/
+
+/*na fase 28 eu resolvi com grid-template: 1fr 50px / 1fr 4fr ;*/
