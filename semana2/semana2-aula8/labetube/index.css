@@ -1,0 +1,18 @@
+footer{
+    background-color: gray;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    margin: 0px;
+}
+
+div{
+    margin: 20px;
+}
+
+footer{
+    font-size: 20px;
+}
