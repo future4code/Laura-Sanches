@@ -1,0 +1,88 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #first-block {
+    background-color: red;
+    display: flex;
+    flex: 1;
+    height: 50px;
+  }
+
+  .blue-block {
+    background-color: blue;
+    display: flex;
+    width: 33%;
+    margin: 10px;
+  }
+  
+  .yellow-block {
+    background-color: yellow;
+    display: flex;
+    width: 33%;
+    margin: 10px;
+  }
+  
+  .green-block {
+    background-color: green;
+    display: flex;
+    width: 33%;
+    margin: 10px;
+  }
+  
+  .black-block {
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: 10px;
+    height: 250px;
+  }
+  
+  .white-block {
+    background-color: white;
+    width: 33%;
+    margin: 10px;
+    height: 150px;
+  }
+  
+  .container1 {
+    height: 150px;
+    flex-direction: row;
+    border: none;
+    display: flex;
+  }
+  
+  .container2 {
+    height: 150px;
+    flex-direction: row;
+    border: none;
+    display: flex;
+  }
+  
+  .container3 {
+    height: 150px;
+    flex-direction: row;
+    border: none;
+    display: flex;
+  }
+  
+  .container4 {
+    height: 150px;
+    flex-direction: row;
+    border: none;
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+      .blue-block,
+      .yellow-block {
+          width:45%;
+      }
+
+      .green-block{
+          width: 95%;
+      }
+  }
