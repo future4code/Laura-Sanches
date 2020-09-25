@@ -7,12 +7,35 @@ header{
     justify-content: space-between;
     background-color: orange;
     margin: 0px;
+    font-size: 10px;
 }
 
 div{
     margin: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 footer{
     font-size: 20px;
+}
+
+label{
+    display: block;
+    color: black;
+}
+
+.borda{
+    border-style: solid;
+    margin: 10px;
+    border-color: green;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px){
+    .borda{
+        display: flex;
+        flex-direction: column;
+    }
 }
