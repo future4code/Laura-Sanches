@@ -4,7 +4,6 @@
 function minhaFuncao(variavel) {
 	return variavel * 5
 }
-
 console.log(minhaFuncao(2))
 console.log(minhaFuncao(10))
 */
@@ -15,13 +14,11 @@ console.log(minhaFuncao(10))
 //EXERCÍCIO 2
 /*
 let arrayDeNomes = ["Darvas", "Caio", "João", "Paulinha", "Soter"];
-
 const outraFuncao = function(array) {
 	for (let i = 0; i < 2; i++) {
 		console.log(array[i])
 	}
 }
-
 outraFuncao(arrayDeNomes)
 */
 
@@ -49,7 +46,6 @@ const metodo = (array) => {
 let sobreMim = function(){
     console.log("Eu sou Laura, tenho 19 anos, moro em Araraquara e sou estudante")
 }
-
 sobreMim()
 */
 
@@ -61,11 +57,8 @@ const dados = (nome, idade, cidade, estudante) => {
     }else{
      estudante = "Não sou estudante"
     }
-
     console.log(" Eu sou " + nome + " , tenho " + idade + " anos, moro em " + cidade + " e " + estudante)
-
 }
-
 dados("Laura", 19, "Araraquara", "true")
 */
 
@@ -74,7 +67,6 @@ dados("Laura", 19, "Araraquara", "true")
 /*
 const resultado = somaDosNumeros (4, 6)
     console.log(resultado)
-
 function somaDosNumeros (numero1, numero2){
     const soma = numero1 + numero2
         return soma
@@ -90,7 +82,6 @@ function numeros (x, y){
         console.log("são diferentes");
     }
 }
-
 numeros(8, 8);
 */
 
@@ -101,7 +92,6 @@ let mandarMensagem = (mensagem) =>{
         console.log(mensagem)
     }
 }
-
 mandarMensagem ("A labenu é sensacional!")
 */
 
@@ -110,7 +100,6 @@ mandarMensagem ("A labenu é sensacional!")
 /*
 const tamanhoArray = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 function verificaArray (){
-
         return tamanhoArray.length
 }
 console.log(verificaArray())
@@ -137,4 +126,4 @@ const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
             }
     }
     return arrayPar.length
-*/
+*/ 
