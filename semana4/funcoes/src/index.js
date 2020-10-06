@@ -117,4 +117,24 @@ console.log(verificaArray())
 */
 
 //B.
+/*
 const arrayNumeros = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+    if(arrayNumeros % 2 === 0){
+        console.log("Este número é par");
+    }else{
+        console.log("Este número é ímpar");
+    }
+*/
+
+//C.
+/*
+const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+    let tamanhoArray = (array) =>{
+        let arrayPar=[10, 78, 90, 52, 35, 67, 84, 22]
+        for(let i = 0; i < array.length; i++);
+            if (array % 2 === 0){
+                arrayPar.push(array[i])
+            }
+    }
+    return arrayPar.length
+*/
