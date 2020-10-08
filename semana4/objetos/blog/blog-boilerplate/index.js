@@ -5,11 +5,7 @@ let valorAutor = document.getElementById("autor-post");
 let valorConteudo = document.getElementById("conteudo-post");
 let lugarImprimir = document.getElementById("container-de-posts")
 
-lugarImprimir.innerHTML += `${valorTitulo.value} <br> ${valorAutor.value} <br> ${valorConteudo.value}`
-
-valorTitulo.value = "";
-valorAutor.value = "";
-valorConteudo.value = "";
+lugarImprimir.innerHTML += `<div> <br>${valorTitulo.value} <br> ${valorAutor.value} <br> ${valorConteudo.value}</div>`
 
 let informacoes={
 
@@ -18,6 +14,10 @@ let informacoes={
     conteudo: valorConteudo
 
 }
+
+valorTitulo.value = "";
+valorAutor.value = "";
+valorConteudo.value = "";
 
 let armazenaArray = [informacoes]
 
