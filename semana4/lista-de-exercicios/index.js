@@ -93,3 +93,14 @@ console.log(numero2);
 //EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO
 
 //1
+/*As 3 maneiras de percorrer uma lista são: while, for e for..of..
+exemplo de while:
+let i = 0
+
+while (i < 10){
+
+    console.log(i)
+
+    i++
+}
+*/
