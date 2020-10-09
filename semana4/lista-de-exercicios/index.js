@@ -104,3 +104,30 @@ while (i < 10){
     i++
 }
 */
+
+//2
+/*
+const booleano1 = true
+const booleano2 = false
+const booleano3 = !booleano2 //true
+const booleano4 = !booleano3//false
+
+a) true && false && false = false
+b) (true && false) || false = false
+c)(false || true) && (false || true) = true
+d)(true && false) || (false && false) = true
+e)false && true || (true && true && true) = true
+*/
+
+//3
+/*
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const quantidadeDeNumerosPares = [];
+
+let numeros = 0
+
+while(numeros <= quantidadeDeNumerosPares){
+    console.log(i * 2)
+
+    i++
+*/
