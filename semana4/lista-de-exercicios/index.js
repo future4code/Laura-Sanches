@@ -124,10 +124,10 @@ e)false && true || (true && true && true) = true
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 const quantidadeDeNumerosPares = [];
 
-let numeros = 0
+let i = 0
 
-while(numeros <= quantidadeDeNumerosPares){
-    console.log(i * 2)
+while(i <= quantidadeDeNumerosPares){
+    console.log(i * 2 + 1)
 
     i++
 */
