@@ -181,3 +181,15 @@ let doisNumeros = function (a, b){
 doisNumeros(5, 10)
 */
 
+//--------------------------------------------------------------------------------
+//EXERCICIOS DE FUNÇÕES
+//1
+//2
+/*
+let chamandoLabenu = function(){
+    alert ("Hello future4!");
+}
+const chamando = chamandoLabenu();
+*/
+
+//-----------------------------------------------------------------------------------
