@@ -130,4 +130,54 @@ while(i <= quantidadeDeNumerosPares){
     console.log(i * 2 + 1)
 
     i++
+}
 */
+
+//4
+/*
+function triangulo (a, b, c){
+    if ((a === b) && (b === c) && (a === c)){
+        return "O triângulo é equilátero!"
+    }else if ((a === b && b !== c) || (a !== b && b === c) || (a !== c && c === b)){
+        return "O triângulo é isosceles!"
+    }else{
+        return "O triângulo é escaleno!"
+    }
+}
+console.log(triangulo(1, 2, 3))
+*/
+
+//5
+/*
+let doisNumeros = function (a, b){
+    if ((a > b)){
+        console.log(`O maior é ${a}`)
+    }else{
+        console.log(`O maior número é ${b}`)
+    }
+
+    if ((a % b === 0)){
+        console.log(`${a} é divisível por ${b}`)
+    }else{
+        console.log(`${a} não é divisível por ${b}`)
+    }
+    
+    if ((b % a === 0)){
+        console.log(`${b} é divisível por ${a}`)
+    }else{
+        console.log(`${b} não é divisível por ${b}`)
+    }
+
+    if ((a > b)){
+        let diferencaNumeros = a - b
+        console.log(`A diferença entre os números é ${diferencaNumeros}`)
+    }else if((b > a)){
+        diferencaNumeros = b - a
+        console.log(`A diferença entre os números é ${diferencaNumeros}`)
+    }else{
+        console.log("Eles são iguais!")
+    }
+}
+doisNumeros(5, 10)
+*/
+
