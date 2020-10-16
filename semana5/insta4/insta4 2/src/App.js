@@ -2,30 +2,30 @@ import React from 'react';
 import './App.css';
 import Post from './components/Post/Post';
 
-class App extends react.Compontends {
+class App extends React.Component {
   render() {
     return (
-      <div className='app-container'>
+      <div className={'app-container'}>
         <Post
           nomeUsuario={'Laís'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}  
+          fotoUsuario={'https://picsum.photos/50/51'}
+          fotoPost={'https://picsum.photos/200/151'} 
         />
 
         <Post
           nomeUsuario={'Laura'}
-          fotoUsuario={'https://super.abril.com.br/wp-content/uploads/2019/04/si_cachorroinstagram_home.png'}
-          fotoPost={'https://super.abril.com.br/wp-content/uploads/2019/04/si_cachorroinstagram_home.png'}
+          fotoUsuario={'https://picsum.photos/50/52'}
+          fotoPost={'https://picsum.photos/200/152'}
         />
 
-<Post
+        <Post
           nomeUsuario={'Caio'}
-          fotoUsuario={'https://static.poder360.com.br/2020/04/GATO-CORONAVIRUS.jpg'}
-          fotoPost={'https://static.poder360.com.br/2020/04/GATO-CORONAVIRUS.jpg'}  
+          fotoUsuario={'https://picsum.photos/50/53'}
+          fotoPost={'https://picsum.photos/200/153'}  
         />
-      </div>
-    );
+        </div>
+      );
+    }
   }
-}
 
 export default App;
