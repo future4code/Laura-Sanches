@@ -1,52 +1,28 @@
 import React from "react";
-import axios from "axios";
+import FormPage from "./components/FormPage";
+import UserListPage from "./components/UserListPage";
+
 class App extends React.Component {
   state = {
-    
-    userName: "",
-    userEmail: ""
-    
+    formPage: true
   };
-  createUser = () => {
-    const body = {
-      "name" : this.state.userName,
-      "email" : this.state.userEmail
-    };
-    axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users", body, {
-      headers: {
-        Authorization: "carlos-augusto-dumont"
-      }
-    }
-    ).then((response) => {
-      console.log(response.data)
-    }).catch((error) => {
-      console.log(error.message);
-    })
+
+  changePage= () => {
+    this.setState({formPage: !this.state.formPage});
+  };
+
+  render(){
+    const currentPage = this.state.formPage ? <FormPage /> : <UserListPage />;
+
+    return(
+      <div>
+        {currentPage}
+        <button onClick = {this.changePage}>
+          Mudar de Página
+        </button>
+      </div>
+    );
   }
-  onChangeUserName = (event) => {
-    this.setState({ userName: event.target.value});
-  };
-  onChangeUserEmail = (event) => {
-    this.setState({ userEmail: event.target.value});
-  };
-  render() {
-      return (
-        <div>
-          <input 
-          type="text"
-          placeholder="Digite seu nome" 
-          value={this.state.userValue} 
-          onChange={this.onChangeUserValue}
-          />
-          <input type="e-mail" 
-          placeholder="Digite seu e-mail"
-          value={this.state.userEmail} 
-          onChange={this.onChangeUserEmail}
-          />
-          <button onClick={this.createUser}>Cadastrar</button>
-        </div>
-      );
-    }
-  }
+}
   
 export default App;
