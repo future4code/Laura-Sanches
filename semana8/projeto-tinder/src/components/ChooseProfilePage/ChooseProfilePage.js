@@ -1,39 +1,51 @@
 import React, {useState, useEffect} from 'react';
-import style from 'styled-components';
 import axios from 'axios'
 import ProfileCard from './ProfileCard';
 import ChooseButtons from './ChooseButtons';
 
 function ChooseProfilePage () {
-    const [profileToChoose, setProfileToChoose] = useState({})
+    const [profileToChoose, setProfileToChoose] = useState([])
+
+    const getProfileToChoose = () => {
+        axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/Laura Sanches Dumont/person').then(response => {
+            console.log ("analisar response", response)
+            setProfileToChoose(response.data.profile)
+    })
+}
+
+    const chooseProfile = (choice) => {
+        const body = {
+            choice: choice,
+            id: profileToChoose.id
+        }
+        setProfileToChoose()
+
+        axios.post('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/sanches/choose-person', body).then(response => {
+        getProfileToChoose()
+    })
+    }
 
 useEffect(() => {
-    axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/sanches/person').then(response => {
-        setProfileToChoose(response.data.profile)
-    })
+    getProfileToChoose()
 }, []);
 
 const onClickNo = () => {
-    const body = {
-        choice: false,
-        id: profileToChoose.id
-    }
-
-    axios.post('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/sanches/choose-person', body).then(response => {
-
-    })
-
+    chooseProfile(false)
 }
 
 const onClickSim = () => {
-
+    chooseProfile(true)
 }
 
 
     return(
         <div>
-            <ProfileCard profile={profileToChoose} />
-            <ChooseButtons onClickNo={onClickNo} onClickSim={onClickSim} />
+            { profileToChoose && 
+                <>
+                    <ProfileCard profile={profileToChoose} />
+                    <ChooseButtons onClickNo={onClickNo} onClickSim={onClickSim} />
+                </>
+            }
         </div>
     )
 }

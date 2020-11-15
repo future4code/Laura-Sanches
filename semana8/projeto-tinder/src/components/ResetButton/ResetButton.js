@@ -3,9 +3,15 @@ import style from 'styled-components';
 import axios from 'axios'
 
 function ResetButton () {
+const onClickReset = () => {
+    axios.put('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/Laura Sanches Dumont/clear').then(response => {
+
+    })
+}
+
     return(
         <div>
-            <button>Resetar curtidas e matches</button>
+            <button onClick={onClickReset}>Resetar curtidas e matches</button>
         </div>
     )
 }

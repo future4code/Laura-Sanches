@@ -7,11 +7,6 @@ const ProfileCardContainer = style.div`
     border: 1px solid black;
 `
 
-const ProfilePicture = style.div`
-    width: 100%
-    display: block;
-`
-
 const ProfileInfo = style.div`
     padding: 0 16px;
 `
@@ -19,10 +14,10 @@ const ProfileInfo = style.div`
 function ProfileCard(props) {
     return(
         <ProfileCardContainer>
-            <ProfilePicture src={ProfilePicture.photo}/>
+            <img src={profile.photo}/>
             <ProfileInfo>
-                <p>{profileToChoose.name}, {profileToChoose.age}</p>
-                <p>{profileToChoose.bio} </p>
+                <p>{profile.name}, {profile.age}</p>
+                <p>{profile.bio} </p>
             </ProfileInfo>
         </ProfileCardContainer>
     )
