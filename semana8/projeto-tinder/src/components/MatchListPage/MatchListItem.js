@@ -1,7 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import style from 'styled-components';
-import axios from 'axios'
-import { CenterFocusStrong } from '@material-ui/icons';
 
 const ListItemContainer = style.div`
     display: flex;
@@ -16,8 +14,8 @@ const ListItemContainer = style.div`
 const Avatar = style.div`
     border-radius: 50%;
     margin-right: 8px;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
 `
 
 function MatchListItem (props) {

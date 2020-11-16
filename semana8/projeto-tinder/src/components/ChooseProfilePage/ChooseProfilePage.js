@@ -8,8 +8,11 @@ function ChooseProfilePage () {
 
     const getProfileToChoose = () => {
         axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/Laura Sanches Dumont/person').then(response => {
-            console.log ("analisar response", response)
             setProfileToChoose(response.data.profile)
+    })
+
+    .catch(error => {
+        console.log(error)
     })
 }
 
@@ -22,6 +25,10 @@ function ChooseProfilePage () {
 
         axios.post('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/sanches/choose-person', body).then(response => {
         getProfileToChoose()
+    })
+
+    .catch(error => {
+        console.log(error)
     })
     }
 

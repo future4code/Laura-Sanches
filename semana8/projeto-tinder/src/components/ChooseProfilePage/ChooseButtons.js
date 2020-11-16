@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import style from 'styled-components';
-import axios from 'axios'
 
 const ButtonsContainer = style.div`
     display: flex;
@@ -11,8 +10,8 @@ function ChooseButtons (props) {
     
     return(
         <ButtonsContainer>
-            <button onClick={props.onClickNo}>Não</button>
-            <button onClick={props.onClickYes}>Yes</button>
+            <button onClick={props.onClickNo}>Num Quero</button>
+            <button onClick={props.onClickSim}>Quero</button>
         </ButtonsContainer>
     )
 }

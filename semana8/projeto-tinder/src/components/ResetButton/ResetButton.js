@@ -1,11 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import style from 'styled-components';
+import React from 'react';
 import axios from 'axios'
 
 function ResetButton () {
 const onClickReset = () => {
-    axios.put('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/Laura Sanches Dumont/clear').then(response => {
+    axios.put('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/sanches/clear').then(response => {
 
+    })
+
+    .catch(error => {
+        console.log(error)
     })
 }
 

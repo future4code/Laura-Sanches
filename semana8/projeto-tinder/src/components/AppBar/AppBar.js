@@ -14,9 +14,9 @@ const AppBarContainer = style.div`
 function AppBar (props) {
     return(
         <AppBarContainer>
-            <button onClick={props.goToChooseProfilePage} >Escolher</button>
-            <p>Astromatch</p>
-            <button onClick={props.goToMatchListPage} >Lista</button>
+            <button onClick={props.goToChooseProfilePage} >voltar</button>
+            <img src='https://tecnoblog.net/wp-content/uploads/2018/06/tinder-logo.png' width="80px" height="50px"></img>
+            <button onClick={props.goToMatchListPage} >Lista Matches</button>
         </AppBarContainer>
     )
 }
