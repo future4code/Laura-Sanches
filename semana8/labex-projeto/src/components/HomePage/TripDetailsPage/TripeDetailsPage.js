@@ -5,7 +5,9 @@ import axios from 'axios';
 function TripeDetailsPage() {
     return(
         <div>
-            TripeDetailsPage → Para o detalhe de uma viagem em específico
+            <h1>Detalhes da viagem</h1>
+            <p>Informações da viagem:</p>
+            <p>Lista de candidatos</p>
         </div>
     )
 }

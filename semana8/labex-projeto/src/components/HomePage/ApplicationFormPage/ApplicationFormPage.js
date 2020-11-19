@@ -5,7 +5,14 @@ import axios from 'axios';
 function ApplicationFormPage() {
     return(
         <div>
-            ApplicationFormPage  → Para o usuário escolher entre login e formulário de inscrição
+            <h1>Aplicar para viagem</h1>
+            <input></input>
+            <input></input>
+            <input></input>
+            <input></input>
+            <input></input>
+            <input></input>
+            <button>Inscrever-se</button>
         </div>
     )
 }
