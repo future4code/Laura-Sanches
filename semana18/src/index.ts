@@ -3,7 +3,7 @@ import cors from "cors";
 import { AddressInfo } from "net";
 import dotenv from "dotenv";
 import knex from "knex";
-import createUser from "../semana18/servicos/src/endpoints/createUser";
+import createUser from "./endpoint/createUser";
 
 dotenv.config();
 const app: Express = express();
