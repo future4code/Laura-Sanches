@@ -39,7 +39,7 @@ export class UserBusiness {
             return token;
             
         } catch (error) {
-            throw new Error("Erro ao criar"+error.message)
+            throw new Error("Erro ao criar: "+error.message)
         }
     }
 
@@ -67,7 +67,7 @@ export class UserBusiness {
             return token
 
         } catch (error) {
-            throw new Error("Erro ao logar" + error.message)
+            throw new Error("Erro ao logar: " + error.message)
         }
     }
 }
