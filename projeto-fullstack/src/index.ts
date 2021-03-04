@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import {AddressInfo} from 'net';
 import { UserController } from './controller/UserController';
 import { UserBusiness } from './business/UserBusiness';
+import { GenreController } from './controller/GenreController';
 
 dotenv.config();
 const app: Express = express();
@@ -13,6 +14,9 @@ app.use(cors())
 const userController = new UserController();
 app.post("/user/signup", userController.create);
 app.post("/user/login", userController.login);
+
+const genreController = new GenreController();
+app.put("/genre/", genreController.create);
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
