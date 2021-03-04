@@ -1,12 +1,11 @@
 import React from 'react';
+import {ScreenContainer} from './styled';
 
 const LoginPage = () => {
     return(
-        <div>
-            <h1>
-                LoginPage
-            </h1>
-        </div>
+        <ScreenContainer>
+            <h1>LoginPage</h1>
+        </ScreenContainer>
     )
 }
 
