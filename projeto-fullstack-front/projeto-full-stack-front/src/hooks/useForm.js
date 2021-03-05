@@ -1,11 +1,10 @@
-import { formatMs } from '@material-ui/core';
 import {useState} from 'react';
 
 const useForm = (initialState) => {
-    const {Form, setForm} = useState(initialState)
+    const {form, setForm} = useState(initialState)
 
     const handleInputChange = (event) => {
-        const {value, name} = event.target
+        const {name, value} = event.target
         setForm({...form, [name]: value})
     }
 
