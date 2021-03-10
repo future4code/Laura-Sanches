@@ -4,13 +4,16 @@ import TextField from '@material-ui/core/TextField';
 import useForm from '../../hooks/useForm';
 import Button from '@material-ui/core/Button';
 import { useHistory } from 'react-router-dom';
+import { signUp } from '../../services/user';
 
-function SignForm() {
+const SignForm = () => {
+    const history = useHistory()
     const {form, handleInputChange, clear} = useForm({name:"", email: "", password: "", nickname:"" });
-
 
     const onSubmitForm = (event) => {
         event.preventDefault()
+        console.log("onSubmit", form)
+        signUp(form, clear, history)
     };
 
     return (

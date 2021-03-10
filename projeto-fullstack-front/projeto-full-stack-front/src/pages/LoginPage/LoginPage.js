@@ -4,8 +4,10 @@ import Button from '@material-ui/core/Button';
 import LoginForm from './LoginForm';
 import { useHistory } from 'react-router-dom';
 import {goToSignUp} from '../../routes/coordinator'
+import useUnprotectedPage from '../../hooks/useUnprotectedPage';
 
 function LoginPage() {
+    useUnprotectedPage()
     const history = useHistory()
     return (
         <ScreenContainer>
@@ -14,7 +16,6 @@ function LoginPage() {
             <SignUpButtonContainer>
             <Button
                 onClick={() => goToSignUp(history)}
-
                 type={"submit"}
                 fullWidth
                 variant={"text"}
