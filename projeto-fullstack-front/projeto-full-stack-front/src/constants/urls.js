@@ -1,1 +1,1 @@
-const BASE_URL = "https://backend-fullstack-labenu.herokuapp.com/music"
+const BASE_URL = "https://backend-fullstack-labenu.herokuapp.com"
