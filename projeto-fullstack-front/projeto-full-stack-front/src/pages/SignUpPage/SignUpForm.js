@@ -6,14 +6,14 @@ import Button from '@material-ui/core/Button';
 import { useHistory } from 'react-router-dom';
 import { signUp } from '../../services/user';
 
-const SignForm = () => {
+const SignUpForm = ({setRightButtonText}) => {
     const history = useHistory()
     const {form, handleInputChange, clear} = useForm({name:"", email: "", password: "", nickname:"" });
 
     const onSubmitForm = (event) => {
         event.preventDefault()
         console.log("onSubmit", form)
-        signUp(form, clear, history)
+        signUp(form, clear, history, setRightButtonText)
     };
 
     return (
@@ -76,4 +76,4 @@ const SignForm = () => {
     );
 }
 
-export default SignForm;
+export default SignUpForm;
