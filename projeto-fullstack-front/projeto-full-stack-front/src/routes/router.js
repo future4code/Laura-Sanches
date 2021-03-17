@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import LoginPage from "../pages/LoginPage/LoginPage";
 import AddPlaylistPage from '../pages/AddPlaylistPage/AddPlaylistPage';
 import PlaylistDetailPage from '../pages/PlaylistDetailPage/PlaylistDetailPage';
@@ -10,6 +10,7 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 const Router = ({setRightButtonText}) => {
 
     return(
+        <BrowserRouter>
             <Switch>
                 <Route exact path="/login">
                     <LoginPage setRightButtonText={setRightButtonText}/>
@@ -30,8 +31,8 @@ const Router = ({setRightButtonText}) => {
                     <ErrorPage/>
                 </Route>
             </Switch>
+        </BrowserRouter>
     )
-
 }
 
 export default Router;

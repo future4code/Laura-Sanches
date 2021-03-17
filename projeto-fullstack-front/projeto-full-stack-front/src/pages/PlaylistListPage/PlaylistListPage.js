@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 
 const PlaylistListPage = () => {
     useProtectedPage()
-    const history = useHistory
+    const history = useHistory()
     const playlists = useRequestData([], 'https://backend-fullstack-labenu.herokuapp.com/user/feed')
     console.log("aqui!!!!", playlists)
 
