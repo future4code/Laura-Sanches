@@ -12,8 +12,10 @@ const PlaylistCard = (props) => {
                     component={'img'}
                     alt={props.title}
                     height={'150px'}
-                    image={props.image}
                     title={props.title}
+                    file={props.file}
+                    author={props.author}
+                    date={props.date}
                 />
 
                 <PlaylistCardContent>

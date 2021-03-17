@@ -1,11 +1,15 @@
 import React from 'react';
 import useProtectedPage from '../../hooks/useProtectedPage';
-import {PlaylistListContainer} from './styled';
+import {PlaylistListContainer, AddPlaylistButton} from './styled';
 import PlaylistCard from '../../components/PlaylistCard/PlaylistCard'
 import useRequestData from '../../hooks/useRequestData';
+import {Add} from '@material-ui/icons';
+import { goToAddPlaylist } from '../../routes/coordinator';
+import { useHistory } from 'react-router-dom';
 
 const PlaylistListPage = () => {
     useProtectedPage()
+    const history = useHistory
     const playlists = useRequestData([], 'https://backend-fullstack-labenu.herokuapp.com/user/feed')
     console.log("aqui!!!!", playlists)
 
@@ -17,15 +21,21 @@ const PlaylistListPage = () => {
               file={playlist.file}
               author={playlist.author}
               date={playlist.date}
-
+              onClick={() => null}
             />
           )
     })
 
     return(
-        <div>
-
-        </div>
+        <PlaylistListContainer>
+            {playlistCards}
+            <AddPlaylistButton
+              color={"primary"}
+              onClick={() => goToAddPlaylist(history)}
+            >
+            <Add/>
+            </AddPlaylistButton>
+        </PlaylistListContainer>
     )
 }
 
