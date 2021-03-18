@@ -11,7 +11,9 @@ const PlaylistListPage = () => {
     useProtectedPage()
     const history = useHistory()
     const playlists = useRequestData([], 'https://backend-fullstack-labenu.herokuapp.com/user/feed')
-    console.log("aqui!!!!", playlists)
+    const onClickCard = () => {
+
+    }
 
     const playlistCards = playlists && playlists.feed && playlists.feed.result && playlists.feed.result.musics.map((playlist) => {
         return (
@@ -21,7 +23,7 @@ const PlaylistListPage = () => {
               file={playlist.file}
               author={playlist.author}
               date={playlist.date}
-              onClick={() => null}
+              onClick={onClickCard}
             />
           )
     })
