@@ -6,8 +6,7 @@ import useRequestData from '../../hooks/useRequestData';
 import {PlaylistContainer, ScreenContainer} from './styled'
 
 const PlaylistDetailPage = () => {
-    const params = useParams()
-    const playlist = useRequestData([], `https://backend-fullstack-labenu.herokuapp.com/music/${params.id}`) [0]
+    const playlist = useRequestData([], `https://backend-fullstack-labenu.herokuapp.com/music/${id}`)
 
     useProtectedPage()
     return(

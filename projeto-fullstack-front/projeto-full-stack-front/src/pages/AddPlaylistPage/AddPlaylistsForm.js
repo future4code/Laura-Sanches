@@ -7,7 +7,7 @@ import {createPlaylist} from "../../services/playlist"
 import CircularProgress from '@material-ui/core/CircularProgress'
 
 const AddPlaylistForm = () => {
-  const [form, onChange, clear] = useForm({ title: "", file: "", genresIds: "", albumId:"" })
+  const {form, onChange, clear} = useForm({ title: "", file: "", genresIds: "", albumId:"" })
   const [isLoading, setIsLoading] = useState(false)
 
   const onSubmitForm = (event) => {
