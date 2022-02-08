@@ -1,0 +1,5 @@
+/* Utilizando um atributo sem especificar o valor */
+input[required]
+{
+    border-color: red;
+}
