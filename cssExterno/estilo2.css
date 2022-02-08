@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@import url("../cssExterno/estilo2.css");
+
+p{
+    color: black;
+}
