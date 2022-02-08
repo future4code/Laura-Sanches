@@ -1,0 +1,16 @@
+.verde{
+    color:green;
+}
+
+.grande{
+    font-size: 3em;
+}
+
+#idParagr{
+    color: orange;
+    font-weight: bold;
+}
+
+h2.verde{
+    font-family: fantasy;
+}
